@@ -47,7 +47,7 @@ Possible use case:
 
 ## Examples
 
-Run with `node [test](./test/index/js)`
+[test/index.js](./test/index/js)
 
 ```js
 const hyperx     = require('hyperx');
