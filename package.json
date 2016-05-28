@@ -1,0 +1,24 @@
+{
+  "name": "hyperx-transforms",
+  "version": "1.0.0",
+  "description": "> hyperx middleware like transforms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mklabs/hyperx-transforms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mklabs/hyperx-transforms/issues"
+  },
+  "homepage": "https://github.com/mklabs/hyperx-transforms#readme",
+  "devDependencies": {
+    "bel": "^4.3.1",
+    "hyperx": "^2.0.3"
+  }
+}
