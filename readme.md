@@ -56,7 +56,6 @@ const assert     = require('assert');
 
 const plugins = ['./transforms/log', './transforms/yop'];
 
-error.define('Render');
 let hx = transforms(require('bel').createElement, plugins);
 let tree = hx`
 <div>
@@ -66,7 +65,6 @@ let tree = hx`
 
 assert.ok(tree);
 
-error.define('Virtual DOM');
 let vdom      = require('virtual-dom');
 let stringify = require('vdom-to-html');
 
