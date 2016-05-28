@@ -10,7 +10,8 @@ const transforms = require('hyperx-transforms');
 const vdom       = require('virtual-dom');
 const stringify  = require('vdom-to-html');
 
-hx = hyperx(transforms(vdom.h, ['hyperx-transform-log', 'hyperx-transform-inline-styles']));
+const plugins = ['./transforms/log', './transforms/yop'];
+hx = hyperx(transforms(vdom.h, plugins);
 tree = hx`
 <div>
   <h1>${plugins.join(' ')}</h1>
@@ -24,8 +25,11 @@ console.log(html);
 
 ## Transforms
 
-Transforms are hyperscript middleware like functions in the form of
-`transform(tag, attrs, children) => { tag, attrs, children }`
+Transforms are hyperscript middleware like functions in the form of:
+
+```js
+transform(tag, attrs, children) => { tag, attrs, children }
+```
 
 Unlike regular hyperscript factories, they don't return an hyperscript renderer
 but a `{ tag, attrs, children }` object.
@@ -50,7 +54,7 @@ const hyperx     = require('hyperx');
 const transforms = require('hyperx-transforms');
 const assert     = require('assert');
 
-var plugins = ['./transforms/log', './transforms/yop'];
+const plugins = ['./transforms/log', './transforms/yop'];
 
 error.define('Render');
 let hx = transforms(require('bel').createElement, plugins);
