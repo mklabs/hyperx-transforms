@@ -1,6 +1,6 @@
-# hyperx-transform
+# hyperx-transforms [![Build Status](https://secure.travis-ci.org/mklabs/hyperx-transforms.png)](http://travis-ci.org/mklabs/hyperx-transforms)
 
-> hyperx middleware like transforms
+> [hyperx](https://github.com/substack/hyperx) middleware like transforms
 
 ## Usage
 
@@ -47,7 +47,7 @@ Possible use case:
 
 ## Examples
 
-[test/index.js](./test/index/js)
+[test/index.js](./test/index.js)
 
 ```js
 const hyperx     = require('hyperx');
